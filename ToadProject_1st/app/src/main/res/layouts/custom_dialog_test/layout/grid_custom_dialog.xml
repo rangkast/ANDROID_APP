@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:id="@+id/grid_custom_layout">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/toad_app_icon_v4"
+                    android:id="@+id/grid_custom_dialog_image"/>
+                <TextView
+                    android:id="@+id/grid_text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="저장 실패"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/grid_custom_dialog_image"
+                    />
+            </RelativeLayout>
+            <android.support.design.widget.TextInputEditText
+
+                android:id="@+id/make_folder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:hint="대한민국/서울특별시/강서구"
+                android:textSize="20sp"
+                android:textColorHint="#42000000"/>
+
+            <TextView
+                android:id="@+id/grid_text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="메시지"
+                android:textColor="#000"
+                android:textSize="10dp"/>
+
+        </LinearLayout>
+
+
+
+        <GridView
+            android:id="@+id/grid_custom_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:isScrollContainer="true"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:layout_below="@+id/grid_custom_layout"/>
+        <TextView
+            android:id="@+id/grid_text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="폴더 만들기"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_below="@+id/grid_custom_dialog"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/grid_text_question">
+
+
+            <TextView
+                android:id="@+id/grid_dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="취소"
+                android:textColor="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/grid_dialog_ok"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/grid_dialog_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:text="확인"
+                android:textColor="@color/colorAccent"
+
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/focus_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/photo_map_color"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="@color/white"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/focus_text">
+
+                <com.toadstudio.first.toadproject.Image.NewViewPager
+                    android:id="@+id/focus_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:weightSum="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_udrl"
+            android:layout_weight="3">
+            <ScrollView
+                android:id="@+id/focus_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/focus_edit"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_alignParentTop="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:hint="여기에 메모를 해보세요."/>
+
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/focus_delete"
+                    android:textSize="10dp"
+                    android:text="저장"
+                    style="@android:style/Widget.Material.Light.Button.Borderless"
+                    android:src="@drawable/pen"
+                    android:background="@drawable/circle_border"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/focus_ok"/>
+
+                <ImageButton
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/focus_ok"
+                    android:textSize="10dp"
+                    android:text="회전"
+                    style="@android:style/Widget.Material.Light.Button.Borderless"
+                    android:src="@android:drawable/ic_menu_rotate"
+                    android:background="@drawable/circle_border"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/focus_rotate"/>
+
+                <ImageButton
+                    android:id="@+id/focus_delete"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    style="@android:style/Widget.Material.Light.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/circle_border"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eraser"
+                    android:text="삭제"
+                    android:textSize="10dp" />
+
+                <ImageButton
+                    android:id="@+id/focus_camera"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    style="@android:style/Widget.Material.Light.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/circle_border"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:text="삭제"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

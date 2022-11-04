@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/settings_markerlist"
+        android:divider="#dedbd2"
+        android:dividerHeight="1dp"
+        android:choiceMode="singleChoice"
+        android:paddingBottom="5dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/trace_time"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="trace time"
+                android:id="@+id/trace_time_txt">
+
+            </TextView>
+        <EditText
+            android:layout_toRightOf="@+id/trace_time_txt"
+            android:id="@+id/editText_1"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trace_time"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="Max Wait Time"
+                android:id="@+id/wait_time_txt">
+            </TextView>
+        <EditText
+            android:layout_toRightOf="@+id/wait_time_txt"
+            android:id="@+id/editText_2"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:paddingTop="10dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="4dp"
+        android:weightSum="10">
+
+
+        <Button
+            android:id="@+id/button_marker_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/button_marker_2"
+            android:text="CANCEL"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+
+        <Button
+            android:id="@+id/button_marker_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="STORE"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/button_marker_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="LISTS"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

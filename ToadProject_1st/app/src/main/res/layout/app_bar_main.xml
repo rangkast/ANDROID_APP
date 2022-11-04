@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.toadstudio.first.toadproject.MainActivity">
+<!--
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/toolbar_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/toad_app_icon_v4"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PhotoMap"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:layout_toRightOf="@+id/toolbar_img"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+-->
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+<!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="@color/transparent"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|top"
+        app:srcCompat="@drawable/home_key" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="@color/transparent"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|top"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="@color/transparent"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="right|top"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+-->
+<!--
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/transparent"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center"
+        app:srcCompat="@drawable/camera_key" />
+        -->
+</android.support.design.widget.CoordinatorLayout>

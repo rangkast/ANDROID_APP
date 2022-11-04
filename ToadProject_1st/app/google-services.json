@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "12658829674",
+    "firebase_url": "https://toadproject-first.firebaseio.com",
+    "project_id": "toadproject-first",
+    "storage_bucket": "toadproject-first.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12658829674:android:ffbd762f40d004c1",
+        "android_client_info": {
+          "package_name": "com.toadstudio.first.toadproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12658829674-ijh0nd8n8c88gnqm3b29ba6u6eth5h6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.toadstudio.first.toadproject",
+            "certificate_hash": "fd09d2d995aea332f30516f1b337d2a17647d92e"
+          }
+        },
+        {
+          "client_id": "12658829674-5pf64c1ofm2t838emr49ngucpr0pjsd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.toadstudio.first.toadproject",
+            "certificate_hash": "55606a9616ea143f3904b101cad8b30b1a13add9"
+          }
+        },
+        {
+          "client_id": "12658829674-t20qvsd6vd84eepr0a0gof1mhfcvlu5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.toadstudio.first.toadproject",
+            "certificate_hash": "ff02e48a054cb3dbc94e8d7b32113d9735e07e9c"
+          }
+        },
+        {
+          "client_id": "12658829674-k9vievmfc3to7urf8vs0gj7vhch64pta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfNJQkf6HEEdck7NdYD9Gd28XS3a3j8_c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12658829674-k9vievmfc3to7urf8vs0gj7vhch64pta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-4387339919511881~4433795886"
+    }
+  ],
+  "configuration_version": "1"
+}

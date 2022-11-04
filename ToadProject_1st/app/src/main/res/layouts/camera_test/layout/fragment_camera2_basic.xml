@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_1"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_camera2_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_1"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <com.toadstudio.first.toadproject.Cam.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+        </com.toadstudio.first.toadproject.Cam.AutoFitTextureView>
+<!--
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/multiple_actions_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                fab:fab_addButtonColorNormal="@color/transparent_white"
+                fab:fab_addButtonColorPressed="@color/white_pressed"
+                fab:fab_addButtonPlusIconColor="@color/half_black"
+                fab:fab_labelStyle="@style/menu_labels_style"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                fab:fab_addButtonSize="mini">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/transparent_white"
+                    fab:fab_title="WB"
+                    fab:fab_icon="@drawable/ic_menu_slideshow"
+                    fab:fab_size="mini"
+                    fab:fab_colorPressed="@color/white_pressed"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/transparent_white"
+                    fab:fab_title="EFFECT"
+                    fab:fab_icon="@drawable/ic_menu_manage"
+                    fab:fab_colorPressed="@color/white_pressed"
+                    fab:fab_size="mini"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/action_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="@color/transparent_white"
+                    fab:fab_title="FILTER"
+                    fab:fab_icon="@android:drawable/ic_media_pause"
+                    fab:fab_colorPressed="@color/white_pressed"
+                    fab:fab_size="mini"/>
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+            -->
+<!--
+    <FrameLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/texture"
+        android:background="@color/transparent_2">
+
+
+
+-->
+
+            <!--
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/texture"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:max="20"
+                android:progress="0" />
+-->
+<!--
+            <android.support.v7.widget.RecyclerView
+            android:id="@+id/effect_recycler"
+            android:layout_below="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+-->
+
+        <ImageButton
+            android:id="@+id/picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/circle_border"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/info"
+            android:contentDescription="@string/description_info"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:background="@drawable/circle_border"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_revert" />
+<!--
+    <ImageButton
+        android:id="@+id/back"
+        android:contentDescription="@string/description_info"
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/circle_border"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_directions" />
+-->
+    <ImageButton
+        android:id="@+id/wide"
+        android:contentDescription="@string/description_info"
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:background="@drawable/circle_border"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_zoom" />
+        </RelativeLayout>
+ <!--   </FrameLayout> -->
+    </LinearLayout>
+</LinearLayout>

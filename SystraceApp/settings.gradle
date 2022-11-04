@@ -1,0 +1,3 @@
+rootProject.name='SystraceApp'
+include 'app', 'MPChartLib'
+

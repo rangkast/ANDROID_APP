@@ -1,0 +1,1 @@
+am instrument -w -r    -e debug false -e class 'com.example.sample_ui_automation.ExampleInstrumentedTest' com.example.sample_ui_automation.test/androidx.test.runner.AndroidJUnitRunner

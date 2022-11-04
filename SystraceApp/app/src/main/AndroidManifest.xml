@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lge.systraceapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
+    <application
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/systrace_icon"
+        android:label="Touch SysTrace App"
+        android:roundIcon="@drawable/systrace_icon"
+        android:supportsRtl="true"
+        android:theme="@style/SplashTheme">
+        <activity android:name="com.lge.systraceapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.lge.systraceapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <service
+            android:name=".Systrace_service"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.SYSTEM_ALERT_WINDOW" >
+        </service>
+        <receiver android:name=".AlarmReceiver"/>
+        <activity android:name="Systrace_chart" />
+        <activity android:name=".TraceFileText" />
+        <activity android:name=".Web_View" />
+        <activity android:name=".Setting_chart_Activity" />
+        <activity android:name=".TraceFileViewer" />
+        <activity android:name=".StackedBarActivity" />
+        <activity android:name=".ClickTestActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/activiy_list_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/photo_map_color"
+        android:paddingLeft="16dp"
+        android:text="폴더 리스트"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        android:divider="#dedbd2"
+        android:dividerHeight="3dp"
+        android:choiceMode="singleChoice">
+    </ListView>
+</LinearLayout>

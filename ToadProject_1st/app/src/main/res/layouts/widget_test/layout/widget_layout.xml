@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imageButton_my"
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_border"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera_key" />
+
+<TextView
+    android:id="@+id/widgettext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/imageButton_my"
+    android:layout_marginTop="1dp"
+    android:textSize="12dp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:text="GoPhoto"/>
+
+</RelativeLayout>

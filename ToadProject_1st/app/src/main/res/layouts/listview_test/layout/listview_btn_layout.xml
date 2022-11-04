@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/listview_btn_1"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:background="@color/white"
+            android:text="즐겨찾기 보기"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/listviewbtn"
+                android:divider="#dedbd2"
+                android:dividerHeight="3dp"
+                android:choiceMode="singleChoice">
+            </ListView>
+    </LinearLayout>
+</LinearLayout>

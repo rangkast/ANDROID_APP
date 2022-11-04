@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/settings_markerlist"
+        android:divider="#dedbd2"
+        android:dividerHeight="1dp"
+        android:choiceMode="singleChoice"
+        android:paddingBottom="5dp"
+        android:layout_weight="1">
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+        android:weightSum="10">
+    <Button
+        android:id="@+id/button_marker_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/photo_map_color"
+        android:text="뒤로"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/button_marker_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/photo_map_color"
+        android:text="저장"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="wrap_content"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical"
+  >
+
+  <com.toadstudio.first.toadproject.RecycleView.AspectRatioImageView
+    android:id="@+id/img_page"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    app:aspectRatio="1 "
+    app:priority="vertical"
+    />
+  <TextView
+      android:id="@+id/textview_check"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:paddingBottom="1dp"
+      android:paddingTop="1dp"
+      android:paddingLeft="1dp"
+      android:paddingRight="1dp"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      android:textColor="@color/photo_map_color"/>
+  <TextView
+      android:id="@+id/textview_row_page_0"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:paddingBottom="1dp"
+      android:paddingLeft="1dp"
+      android:paddingRight="1dp"
+      android:paddingTop="1dp"
+      android:textColor="@color/white"
+      android:textSize="15dp"
+      android:textStyle="bold"/>
+  <ImageView
+      android:id="@+id/textview_row_page"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:paddingBottom="2dp"
+      android:paddingLeft="2dp"
+      android:paddingRight="2dp"
+      android:paddingTop="2dp"
+      android:textColor="@color/white"
+      android:textSize="15dp"
+      android:textStyle="bold"/>
+</RelativeLayout>

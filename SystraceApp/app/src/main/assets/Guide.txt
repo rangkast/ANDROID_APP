@@ -1,0 +1,38 @@
+/* Touch Systrace App */
+Author : rangkast.jeong@lge.com
+
+input view gfx irq sync tracing ...
+trace event interval 표현, 로그 저장, 그래프에서 시간 추적
+touch irq base의 interval을 빠르게 확인
+
+1.UserDebug 경우 
+  -permissive 상태에서 앱 실행 (setenforce 0)
+
+2.User 경우
+  -apk 설치 하면 하기 경로에 파일 자동 생성  
+   sdcard/SystraceApp/settings/
+
+  -Kernel IRQ 처리를 위해
+   Rooting 및 permissive, product remount 후
+   settings 폴더에 2개 파일 하기 경로에 push 후 reboot
+
+   adb push atrace /system/bin/
+   adb push init.lge.vendor.on_boot.rc /vendor/etc/init/
+
+  -permissive 상태에서 앱 실행
+
+3. 사용 방법
+ - START 버튼 누르면 Service로 동작
+ - Overlay btn 클릭하면 5s동안 tracing 후 dumping
+ - 해당 폴더에 파일 생성
+ - 파일 롱클릭 하면 chart로 드로잉 및 systrace html 확인
+
+ 4. Setting
+  - Sort List
+    Trace File 중 해당 워딩으로 Sort
+  - List
+    Enable 할 trace cmd list
+  - trace time
+    Tracking 유지 시간
+  - Max Wait Time
+    입력한 시간 이상의 interval 그래프에서 무시

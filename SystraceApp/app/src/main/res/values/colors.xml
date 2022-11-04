@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#cb5c8ba7</color>
+    <color name="gray_overlay">#1A000000</color>
+    <color name="black">#ff000000</color>
+    <drawable name="black_color">#ff000000</drawable>
+    <drawable name="selected_list_color">#ff32A800</drawable>
+    <drawable name="default_list_color">#ffffffff</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="title_color">#a6a1a1</color>
+    <!--
+투명도
+100% — FF
+90% — E6
+80% — CC
+70% — B3
+60% — 99
+50% — 80
+40% — 66
+30% — 4D
+20% — 33
+10% — 1A
+0% — 00
+-->
+    <color name="selected_item_color">#30d1d5</color>
+    <color name="photo_map_color">#cb5c8ba7</color>
+</resources>

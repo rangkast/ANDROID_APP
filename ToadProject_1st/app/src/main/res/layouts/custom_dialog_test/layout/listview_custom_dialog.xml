@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:id="@+id/list_custom_layout">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/toad_app_icon_v4"
+                    android:id="@+id/list_custom_dialog_image"/>
+                <TextView
+                    android:id="@+id/list_text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="저장 실패"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/list_custom_dialog_image"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/list_text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="메시지"
+                android:textColor="#000"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_custom_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:divider="#dedbd2"
+            android:dividerHeight="3dp"
+            android:choiceMode="singleChoice"
+            android:layout_below="@+id/list_custom_layout"/>
+
+        <TextView
+            android:id="@+id/list_text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="폴더 만들기"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_below="@+id/list_custom_dialog"/>
+
+        <TextView
+            android:id="@+id/list_text_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="선택되지 않았습니다."
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_below="@+id/list_text_question"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/list_text_reply">
+
+
+            <TextView
+                android:id="@+id/list_dialog_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="취소"
+                android:textColor="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/list_dialog_ok"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/list_dialog_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:text="확인"
+                android:textColor="@color/colorAccent"
+
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

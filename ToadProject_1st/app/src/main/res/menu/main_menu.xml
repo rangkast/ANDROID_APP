@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/menu1"
+        android:title="갤러리"
+        android:icon="@drawable/ic_menu_gallery"
+        />
+
+     <item
+        android:id="@+id/menu2"
+        android:title="폴더관리"
+        android:icon="@drawable/marker_gray_full">
+        <menu>
+            <group>
+                <item android:id="@+id/menu2_1"
+                    android:title="폴더추가"/>
+                <item android:id="@+id/menu2_2"
+                    android:title="폴더삭제"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu3"
+        android:title="위치보기"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@android:drawable/ic_delete"
+        />
+
+    <item
+        android:id="@+id/menu4"
+        android:title="공유"
+        android:icon="@drawable/ic_menu_share"
+        />
+
+    <item
+        android:id="@+id/menu5"
+        android:title="설정"
+        android:icon="@drawable/ic_menu_manage"
+        />
+
+</menu>
